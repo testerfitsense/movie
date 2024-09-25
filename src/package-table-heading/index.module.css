@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+}
+
+.cell {
+  text-transform: capitalize;
+  display: flex;
+  flex: 1;
+}

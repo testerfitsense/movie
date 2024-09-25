@@ -1,0 +1,22 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner_container {
+  width: 90%;
+}
+.main_title__container {
+  border-bottom: 1px solid #000;
+  margin-bottom: 30px;
+  padding-left: 18px;
+}
+
+.heading_container {
+  margin-bottom: 10px;
+}
+
+.centre {
+  text-align: center;
+}
