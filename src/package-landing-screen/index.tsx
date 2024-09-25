@@ -5,6 +5,7 @@ import Title from "../package-large-text";
 import { Expense } from "../package-types";
 import styles from "./index.module.css";
 import MediumText from "../package-medium-text";
+import { URL } from "../package-config";
 
 const tableHeading: string[] = [
   "date",
@@ -24,15 +25,12 @@ const App = (): React.JSX => {
   useEffect(() => {
     try {
       const fetchData = async () => {
-        const response = await fetch(
-          "https://expenses-backend-mu.vercel.app/expenses",
-          {
-            headers: {
-              "Content-Type": "application/json",
-              Username: "subram.gurung",
-            },
-          }
-        );
+        const response = await fetch(URL, {
+          headers: {
+            "Content-Type": "application/json",
+            Username: "subram.gurung",
+          },
+        });
 
         const result = (await response.json()) as Expense[];
         if (response.ok) {
