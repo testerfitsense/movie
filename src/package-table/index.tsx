@@ -24,7 +24,7 @@ const Table: React.FC<Props> = ({ data }): React.JSX => {
     );
   });
 
-  return <>{main}</>;
+  return main;
 };
 
 export default Table;
