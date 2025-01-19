@@ -17,6 +17,7 @@ module.exports = {
     ],
     "no-undef": "error",
     "@typescript-eslint/no-inferrable-types": "error",
+    "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/typedef": [
       2,
       {
